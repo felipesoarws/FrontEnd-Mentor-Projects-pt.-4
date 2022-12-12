@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  padding: 2rem 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  background: #fffdfa;
+}
+
+body .menu_mobile {
+  background: white;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 100%;
+  max-width: 250px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body .menu_mobile.active {
+  right: 0;
+}
+
+body .menu_mobile_nav {
+  padding: 2rem;
+  margin: 8rem 0;
+}
+
+body .menu_mobile_nav nav {
+  list-style-type: none;
+}
+
+body .menu_mobile_nav nav li {
+  list-style-type: none;
+  font-size: 1.2rem;
+  padding: 0.9rem 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 4rem;
+  }
+}
+
+body header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .menu_desktop {
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: 1024px) {
+  body header .menu_desktop {
+    display: block;
+    visibility: visible;
+  }
+}
+
+body header .menu_desktop_nav nav {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+body header .menu_desktop_nav nav li {
+  list-style-type: none;
+  font-size: 1.1 rem;
+  padding: 0 0.9rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  color: #5d5f79;
+}
+
+body header .menu_mobile_icon {
+  display: block;
+  visibility: visible;
+  z-index: 999;
+}
+
+@media (min-width: 1024px) {
+  body header .menu_mobile_icon {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1024px) {
+  body main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
+    -ms-grid-rows: 1fr 10rem;
+        grid-template-rows: 1fr 10rem;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body main .main__first_sec_bg img {
+    height: 25rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  body main .main__first_sec_bg img {
+    height: 29rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+body main .main__first_sec .main__first_sec_bg_mobile {
+  display: block;
+  visibility: visible;
+}
+
+@media (min-width: 1024px) {
+  body main .main__first_sec .main__first_sec_bg_mobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+body main .main__first_sec .main__first_sec_bg_desk {
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: 1024px) {
+  body main .main__first_sec .main__first_sec_bg_desk {
+    display: block;
+    visibility: visible;
+  }
+}
+
+body main .main__first_sec .main__first_sec_bg_desk img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body main .main__first_sec_title {
+  margin: 0.8rem 0;
+}
+
+@media (min-width: 1024px) {
+  body main .main__first_sec_title {
+    width: 50rem;
+    -webkit-transform: translateX(3rem);
+            transform: translateX(3rem);
+  }
+}
+
+body main .main__first_sec_title h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #00001a;
+}
+
+@media (min-width: 1024px) {
+  body main .main__first_sec_title h1 {
+    font-size: 4rem;
+  }
+}
+
+body main .main__first_sec_paragraph {
+  margin: 0.8rem 0;
+}
+
+@media (min-width: 1024px) {
+  body main .main__first_sec_paragraph {
+    text-align: justify;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+}
+
+body main .main__first_sec_paragraph p {
+  margin: 0.8rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #5d5f79;
+}
+
+@media (min-width: 1024px) {
+  body main .main__first_sec_paragraph p {
+    width: 70%;
+    padding: 0 3rem 0 0;
+  }
+}
+
+body main .main__first_sec_paragraph button {
+  margin: 0.8rem 0;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  color: white;
+  background: #f15e50;
+  border: 0;
+  outline: 0;
+}
+
+body main .main__first_sec .main__first_sec_secs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  body main .main__first_sec .main__first_sec_secs {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+body main .main__second_sec {
+  background: #00001a;
+  padding: 0.5rem 1.2rem;
+  margin: 2.5rem 0;
+  grid-row: 0 / 0;
+}
+
+@media (min-width: 1024px) {
+  body main .main__second_sec {
+    margin: 0;
+  }
+}
+
+body main .main__second_sec_title {
+  margin: 0.8rem 0;
+}
+
+body main .main__second_sec_title h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #e9ab53;
+}
+
+body main .main__second_sec_news {
+  border-bottom: 1px solid #c5c6ce;
+}
+
+body main .main__second_sec_news h2,
+body main .main__second_sec_news p {
+  margin: 0.8rem 0;
+}
+
+body main .main__second_sec_news h2 {
+  color: #fffdfa;
+  font-size: 1.3rem;
+  margin-top: 1.7rem;
+}
+
+body main .main__second_sec_news p {
+  color: #c5c6ce;
+  margin-bottom: 1.7rem;
+  font-size: 0.93rem;
+}
+
+body main .main__second_sec_news.last {
+  border: 0;
+}
+
+body main .main__third_sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  grid-row: 2 / -1;
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 1024px) {
+  body main .main__third_sec {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  body main .main__third_sec {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 2rem;
+  }
+}
+
+body main .main__third_sec_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  body main .main__third_sec_item {
+    gap: 2rem;
+  }
+}
+
+body main .main__third_sec_item_bg img {
+  display: block;
+  width: 6rem;
+}
+
+@media (min-width: 768px) {
+  body main .main__third_sec_item_bg img {
+    width: 7rem;
+  }
+}
+
+body main .main__third_sec_item_stats h1,
+body main .main__third_sec_item_stats h2,
+body main .main__third_sec_item_stats p {
+  margin: 0.3rem 0;
+}
+
+body main .main__third_sec_item_stats h1 {
+  color: #c5c6ce;
+  font-size: 2.2rem;
+}
+
+body main .main__third_sec_item_stats h2 {
+  color: #00001a;
+  font-size: 1.3rem;
+}
+
+body main .main__third_sec_item_stats p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #5d5f79;
+}
+/*# sourceMappingURL=main.css.map */
